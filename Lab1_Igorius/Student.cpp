@@ -28,4 +28,14 @@ bool operator<(const Student& stud1, const Student& stud2)
   }
   return stud1.FatherName<stud2.FatherName;
 }
+string Student::GetFIO()
+{
+  return Surname + " " + Name + " " + FatherName;
+}
+bool operator==(const shared_ptr<Student>& stud1, const shared_ptr<Student>& stud2)
+{
+ return stud1->Name == stud2->Name && stud1->FatherName == stud2->FatherName
+         && stud1->FatherName == stud2->FatherName;
+}
+
 

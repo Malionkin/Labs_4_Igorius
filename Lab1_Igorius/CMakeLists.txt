@@ -3,4 +3,4 @@ project(untitled27)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled27 main.cpp Data_list.cpp Data_list.h Student.cpp Student.h)
+add_executable(untitled27 main.cpp Data_list.cpp Data_list.h Student.cpp Student.h Hash.cpp Hash.h)

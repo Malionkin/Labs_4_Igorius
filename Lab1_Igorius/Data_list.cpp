@@ -59,3 +59,23 @@ void Data_list::Sort_by_Surname()
             [](const shared_ptr<Student>& stud1, const shared_ptr<Student>& stud2)
             {return *stud1<*stud2;});
 }
+void Data_list::Vec_to_Set()
+{
+  for (int i = 0; i < finish_data.size(); i++)
+  {
+    uset_data.insert(finish_data[i]);
+  }
+}
+
+int Data_list::Is_in_Set(const shared_ptr<Student>& stud)
+{
+  auto res = uset_data.find(stud);
+  if (res == uset_data.end())
+  {
+    return 0;
+  }
+  else
+  {
+    return (*res)->ID;
+  }
+}
