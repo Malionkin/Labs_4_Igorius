@@ -1,0 +1,3 @@
+﻿  GameOfLife.cpp
+D:\Google\GameOfLife\GameOfLife\GameOfLife.cpp(363,15): warning C4101: pt: неиспользованная локальная переменная
+  GameOfLife.vcxproj -> D:\Google\GameOfLife\x64\Debug\GameOfLife.exe
